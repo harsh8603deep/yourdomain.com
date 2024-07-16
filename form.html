@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type=text]{
+                width: 40%;
+                padding: 10px 20px;
+                margin: 8px 0px;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 2px solid black;
+
+            }
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 50%;
+               
+               
+            }
+            .row input[type=text]{
+                flex-basis: 300px;
+                border-bottom: 2px solid black;
+              
+            }
+            .btn{
+            position: absolute;
+            top: 50%;
+            left: 21%;
+            width: 40%;
+            height: 65px;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            font-weight: bolder;
+            border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Talk to us</h1>
+        <form action="https://getform.io/f/amdpkdrb" method="POST">
+            <label for="email">Work email</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            <div class="row">
+                <label for="fname">First name</label><br><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname">
+            </div><br><br>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">I agree Fyle's terms and conditions and provide consent to send me communication.</label>
+            <button class="btn" onclick="window.location.href='getform.io';">Contact Us</button>
+        </form>
+    </body>
+</html>
